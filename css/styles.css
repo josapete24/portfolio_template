@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  height: 50px;
+}
+nav a {
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 0px;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+}
+nav a::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #000;
+}
+nav a::before {
+  width: 0%;
+  bottom: 10px;
+}
+nav a:hover::before {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+}
+footer p {
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.projects .kingsmen_thumbnail {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}

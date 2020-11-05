@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    height: 50px;
+
+    a {
+        font-weight: bold;
+        color: #000;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 20px 0px;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+    }
+
+    a::before {
+        transition: 300ms;
+        height: 5px;
+        content: "";
+        position: absolute;
+        background-color: #000;
+      }
+      
+      a::before {
+        width: 0%;
+        bottom: 10px;
+      }
+      
+      a:hover::before {
+        width: 100%;
+      }
+}
