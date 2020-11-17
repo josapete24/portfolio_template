@@ -17,16 +17,16 @@ function initListeners(){
 
 
 function initView() {
-    $.get('../views/navigation.html', function(nav){
+    $.get('views/navigation.html', function(nav){
         $("#nav").html(nav);
         initListeners();
     });
 
-    $.get('../views/home.html', function(home){    
+    $.get('views/home.html', function(home){    
         $("#app").html(home);
     });
 
-    $.get('../views/footer.html', function(footer){   
+    $.get('views/footer.html', function(footer){   
         $("#footer").html(footer);
     });
 
