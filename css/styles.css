@@ -7,6 +7,14 @@
 html,
 body {
   height: 100%;
+  font-size: 15px;
+}
+html #app,
+body #app {
+  margin: auto;
+  font-size: 15px;
+  width: 80%;
+  height: 100%;
 }
 
 h1,
@@ -22,10 +30,11 @@ p {
 nav {
   display: flex;
   height: 50px;
+  background-color: #000;
 }
 nav a {
   font-weight: bold;
-  color: #000;
+  color: #fff;
   font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
@@ -39,7 +48,7 @@ nav a::before {
   height: 5px;
   content: "";
   position: absolute;
-  background-color: #000;
+  background-color: #fff;
 }
 nav a::before {
   width: 0%;
@@ -51,18 +60,146 @@ nav a:hover::before {
 
 footer {
   display: flex;
+  height: 50px;
+  background-color: #000;
 }
 footer p {
-  margin: 0 auto;
+  margin: auto;
   font-size: 15px;
   font-weight: bold;
+  color: #fff;
+}
+
+.home_content {
+  margin-top: 20px;
 }
 
 .projects .kingsmen_thumbnail {
   width: 400px;
   height: 300px;
   object-fit: cover;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   position: relative;
+  float: left;
+}
+.projects .connectfour_thumbnail {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin: auto;
+  display: flex;
+  position: relative;
+  float: left;
+}
+
+.about_me {
+  margin-top: 20px;
+}
+.about_me .about_image {
+  float: left;
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+.about_me .skills {
+  margin: auto;
+  position: relative;
+}
+
+.ph1 {
+  margin-top: 20px;
+}
+
+.projects_gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 10px;
+  margin: auto;
+}
+.projects_gallery .thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projects_gallery #kingsmen_thumbnail {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.projects_gallery #connectfour_thumbnail {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.contact_info {
+  margin-top: 20px;
+}
+.contact_info .phone {
+  text-align: center;
+  float: left;
+  margin-right: 100px;
+  margin-top: 21px;
+}
+.contact_info .phone img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.contact_info .email {
+  text-align: center;
+  float: left;
+  margin-right: 100px;
+}
+.contact_info .email img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.contact_info .github {
+  text-align: center;
+  float: left;
+}
+.contact_info .github img {
+  width: 450px;
+  height: 200px;
+}
+
+.kingsmen {
+  margin-top: 20px;
+}
+.kingsmen .ks1 {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  margin: auto;
+  margin-right: 20px;
+}
+.kingsmen .ks2 {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.connectfour {
+  margin-top: 20px;
+}
+.connectfour .cf1 {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  margin: auto;
+  margin-right: 20px;
+}
+.connectfour .cf2 {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  margin: auto;
 }

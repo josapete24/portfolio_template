@@ -7,6 +7,14 @@
 html,
 body {
     height: 100%;
+    font-size: 15px;
+
+    #app {
+        margin: auto;
+        font-size: 15px;
+        width: 80%;
+        height: 100%;
+    }
 }
 
 h1,

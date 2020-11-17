@@ -1,12 +1,30 @@
+// Code for the home page content //
+.home_content{
+  margin-top: 20px;
+}
+
+
+// Code for the project thumbnails on the home page //
 .projects {
 
   .kingsmen_thumbnail {
     width: 400px;
     height: 300px;
     object-fit: cover;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     position: relative;
+    float: left;
+  }
+
+  .connectfour_thumbnail {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+    display: flex;
+    position: relative;
+    float: left;
   }
 
   
